@@ -3,7 +3,8 @@ st.set_page_config(page_title='Thu vien dong vat', page_icon=':library:', layout
 st.title('Thu vien dong vat')
 st.write('Hay chon 1 con vat, toi se hien thi thong tin con vat')
 Con_vat = {
-    'Con mèo': ['https://tiengdong.com/tieng-meo-keu?utm_source=copylink&utm_medium=share_button&utm_campaign=shared_from_tiengdong.com&utm_content=vi-18h34-19-03-2026', 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQFz5fYgrepcP696Zm4ZtlldGLC6hEr83HUhDcUWJoyK2l-Rqp2YrkMskunDA_R5Hy-722xpQrOgG2-ZhAuOhuQ1aBRtwaf4jp3tfRNlNQKmg&s=10', 'https://www.youtube.com/watch?v=2WKEAHaAfSc'],}
+    'Con mèo': ['https://tiengdong.com/tieng-meo-keu?utm_source=copylink&utm_medium=share_button&utm_campaign=shared_from_tiengdong.com&utm_content=vi-18h34-19-03-2026', 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQFz5fYgrepcP696Zm4ZtlldGLC6hEr83HUhDcUWJoyK2l-Rqp2YrkMskunDA_R5Hy-722xpQrOgG2-ZhAuOhuQ1aBRtwaf4jp3tfRNlNQKmg&s=10', 'https://www.youtube.com/watch?v=2WKEAHaAfSc'],
+    'Con chó': ['https://tiengdong.com/tieng-buoc-chan-cho-chay-ngang-qua-nhanh-kem-hoi-tho?utm_source=copylink&utm_medium=share_button&utm_campaign=shared_from_tiengdong.com&utm_content=vi-18h52-19-03-2026','https://img.freepik.com/vektoren-kostenlos/die-illustration-von-happy-cartoon-puppy_1308-166286.jpg?semt=ais_rp_progressive&w=740&q=80','https://www.youtube.com/watch?v=D0z6MLTsusA']}
 cols = st.columns(len(Con_vat))
 chon = None
 for i, (con_vat, tinh_cach) in enumerate(Con_vat.items()):
