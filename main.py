@@ -1,4 +1,7 @@
 import streamlit as st
+import google.generativeai as genai
+genai.configure(api_key=st.secrets['GOOGLE_API_KEY'])
+model = genai.GenerativeMode('gemini-2.5-flash')
 st.set_page_config(page_title='Thu vien dong vat', page_icon=':library:', layout='wide')
 st.title('Thu vien dong vat')
 st.write('Hay chon 1 con vat, toi se hien thi thong tin con vat')
@@ -21,3 +24,7 @@ if chon:
         st.image(Con_vat[chon][1],caption=chon)
         st.write('Video minh hoạ')
         st.video(Con_vat[chon][2],format='video/mp4')
+        #AI
+        st.write('viết giới thiệu bằng AI')
+        promt=f'Viết đoạn giới thiệu ngắn 200 từ , dễ hiểu , thú vị {chon} cho học sinh.'
+        st.write(response.text) 
