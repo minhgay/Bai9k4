@@ -1,7 +1,7 @@
 import streamlit as st
 import google.generativeai as genai
 genai.configure(api_key=st.secrets['GOOGLE_API_KEY'])
-model = genai.GenerativeMode('gemini-2.5-flash')
+model = genai.GenerativeModel('gemini-2.5-flash')
 st.set_page_config(page_title='Thu vien dong vat', page_icon=':library:', layout='wide')
 st.title('Thu vien dong vat')
 st.write('Hay chon 1 con vat, toi se hien thi thong tin con vat')
@@ -27,6 +27,6 @@ if chon:
         #AI
         st.write('viết giới thiệu bằng AI')
         prompt=f'Viết đoạn giới thiệu ngắn 200 từ , dễ hiểu , thú vị {chon} cho học sinh.'
-        respóne = model.generate_content(prompt)
+        response = model.generate_content(prompt)
         st.write(response.text) 
         
