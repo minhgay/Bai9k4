@@ -26,5 +26,7 @@ if chon:
         st.video(Con_vat[chon][2],format='video/mp4')
         #AI
         st.write('viết giới thiệu bằng AI')
-        promt=f'Viết đoạn giới thiệu ngắn 200 từ , dễ hiểu , thú vị {chon} cho học sinh.'
+        prompt=f'Viết đoạn giới thiệu ngắn 200 từ , dễ hiểu , thú vị {chon} cho học sinh.'
+        respóne = model.generate_content(prompt)
         st.write(response.text) 
+        
