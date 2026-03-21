@@ -5,8 +5,8 @@ st.write('Hay chon 1 con vat, toi se hien thi thong tin con vat')
 Con_vat = {
     'Con mèo': ['https://tiengdong.com/wp-content/uploads/Tieng-meo-keu-www_tiengdong_com.mp3'
 , 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQFz5fYgrepcP696Zm4ZtlldGLC6hEr83HUhDcUWJoyK2l-Rqp2YrkMskunDA_R5Hy-722xpQrOgG2-ZhAuOhuQ1aBRtwaf4jp3tfRNlNQKmg&s=10', 'https://www.youtube.com/watch?v=2WKEAHaAfSc'],
-    'Con chó': ['https://tiengdong.com/wp-content/uploads/Tieng-cho-sua-www_tiengdong_com.mp3
-','https://img.freepik.com/vektoren-kostenlos/die-illustration-von-happy-cartoon-puppy_1308-166286.jpg?semt=ais_rp_progressive&w=740&q=80','https://www.youtube.com/watch?v=D0z6MLTsusA']}
+    'Con chó': ['https://tiengdong.com/wp-content/uploads/Tieng-cho-sua-www_tiengdong_com.mp3'
+,'https://img.freepik.com/vektoren-kostenlos/die-illustration-von-happy-cartoon-puppy_1308-166286.jpg?semt=ais_rp_progressive&w=740&q=80','https://www.youtube.com/watch?v=D0z6MLTsusA']}
 cols = st.columns(len(Con_vat))
 chon = None
 for i, (con_vat, tinh_cach) in enumerate(Con_vat.items()):
