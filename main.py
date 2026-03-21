@@ -2,7 +2,7 @@ import streamlit as st
 import google.generativeai as genai
 genai.configure(api_key=st.secrets['GOOGLE_API_KEY'])
 model = genai.GenerativeModel('gemini-2.5-flash')
-st.set_page_config(page_title='Thu vien dong vat', page_icon=':library:', layout='wide')
+st.set_page_config(page_title='Thư viện động vật', page_icon=':library:', layout='wide')
 st.title('Thu vien dong vat')
 st.write('Hay chon 1 con vat, toi se hien thi thong tin con vat')
 Con_vat = {
